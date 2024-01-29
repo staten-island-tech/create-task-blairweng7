@@ -5,7 +5,6 @@ const DOMSelectors = {
   button: document.getElementById("#button"),
 };
 
-
 const Questions = [
   {
       question: '',
