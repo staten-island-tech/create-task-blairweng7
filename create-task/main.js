@@ -7,14 +7,17 @@ const DOMSelectors = {
 
 const Questions = [
   {
+      id: 1,
       question: 'What is the capital of the United States?',
       answer: 'Washington DC',
   },
   {
-      question: 'What is the capital of Argentina?',
+    id: 2,  
+    question: 'What is the capital of Argentina?',
       answer: 'Buenos Aires',
   },
   {
+    id: 3,
     question: 'What is the capital of France?',
     answer: 'Paris',
   },
@@ -47,9 +50,16 @@ const Questions = [
     answer: 'Mexico City',
   },
 ];
+let wrong = []
+let userAnswer = "";
 
 function capital(){
   for(let i=0; i < Questions.length; i++){
-    if (Questions(answer) === ${Questions.answer})
+    if (userAnswer === Questions.answer){ console.log(correct)}
+   
+    else(Questions.answer !== Questions.answer);
+  wrong.push(userAnswer)
   }
+  
 }
+// if user answer i = correct
