@@ -52,7 +52,24 @@ const Questions = [
 ];
 let wrong = []
 let userAnswer = "";
+console.log(Questions.question);
 
+function consoleCards(){
+  for(let i=0; i<= 10; i++){
+
+  }
+}
+/*function showCards(){
+  DOMSelectors.container.innerHTML= ' ';
+  
+    DOMSelectors.container.insertAdjacentHTML("beforeend",
+  `
+  <h2 class="name">Questions</h2>
+  <h3 class="questions"> ${Questions.question}</h3>
+  <form class="answer-form"></form>
+  `)
+}
+*/
 function capital(){
   for(let i=0; i < Questions.length; i++){
     if (userAnswer === Questions.answer){ console.log(correct)}
