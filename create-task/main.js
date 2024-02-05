@@ -1,65 +1,114 @@
 import './style.css'
 
 const DOMSelectors = {
-  quiz: document.getElementById("#quiz"),
-  button: document.getElementById("#button"),
+  container: document.getElementById("quiz"),
+  button: document.getElementById("button"),
+  results: document.getElementById("submit"),
 };
 
 const Questions = [
   {
       question: 'What is the capital of the United States?',
-      answer: 'Washington DC',
+      choices: {
+        a: "New York",
+        b: "Louisiana",
+        c: "Washington DC",
+      },
+      correctAnswer: 'c',
   },
   {
     question: 'What is the capital of Argentina?',
-      answer: 'Buenos Aires',
+    choices: {
+      a: "La Plata",
+      b: "Buenos Aires",
+      c: "Rosario",
+    },
+      answer: 'b',
   },
   {
     question: 'What is the capital of France?',
-    answer: 'Paris',
+    choices: {
+a: "Bordeaux",
+b: "France",
+c: "Nice"
+    },
+    answer: 'b',
   },
   {
     question: 'What is the capital of Netherlands?',
-    answer: 'Amsterdam',
+    choices: {
+a: "Amsterdam",
+b: "Breda",
+c: "Rotterdam",
+    },
+    answer: 'a',
   },
   {
     question: 'What is the capital of Russia?',
-    answer: 'Moscow',
+    choices: {
+a: "St. Petersburg",
+b: "Omsk",
+c: "Moscow"
+    },
+    answer: 'c',
   },
   {
     question: 'What is the capital of Switzerland?',
-    answer: 'Bern',
+    choices: {
+      a: "Zurich",
+      b: "Bern",
+      c: "Basel",
+    },
+    answer: 'b',
   },
   {
     question: 'What is the capital of the United Kingdom?',
-    answer: 'London',
+    choices: {
+      a: "Liverpool",
+      b: "Bristol",
+      c: "London"
+    },
+    answer: 'c',
   },
   {
     question: 'What is the capital of South Korea?',
-    answer: 'Seoul',
+    choices: {
+      a: "Busan",
+      b: "Ulsan",
+      c: "Seoul",
+    },
+    answer: 'c',
   },
   {
     question: 'What is the capital of Norway?',
-    answer: 'Oslo',
+    choices: {
+      a: "Stavanger",
+      b: "Oslo",
+      c: "Drammen",
+    },
+    answer: 'b',
   },
   {
     question: 'What is the capital of Mexico?',
-    answer: 'Mexico City',
+    choices: {
+      a: "Mexico City",
+      b: "Puebla",
+      c: "Merida"
+    },
+    answer: 'a',
   },
 ];
-console.log(Questions.question);
 
 let wrong = []
 
-function questionCards(){
+function showQuestions(){
 
-  arr.forEach((el)=>{
-     `
-    <div class="card">
-    <h2 class="name"> ${Questions.question}</h2>
-  </div>
-    `
-  })}
+};
+
+function results(){
+
+};
+
 
 // console.log(Questions.question);
 
