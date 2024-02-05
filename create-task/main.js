@@ -10,48 +10,49 @@ const DOMSelectors = {
 const Questions = [
   {
       question: 'What is the capital of the United States?',
-      choices: {
-        a: "New York",
-        b: "Louisiana",
-        c: "Washington DC",
-      },
-      correctAnswer: 'c',
+      choices: [
+      "New York",
+      "Louisiana",
+      "Washington DC",
+      ],
+      correctAnswer: "Washington DC",
   },
   {
     question: 'What is the capital of Argentina?',
-    choices: {
-      a: "La Plata",
-      b: "Buenos Aires",
-      c: "Rosario",
-    },
-      answer: 'b',
+    choices: [
+      "La Plata",
+     "Buenos Aires",
+      "Rosario",
+    ],
+      answer: "Buenos Aires",
   },
   {
     question: 'What is the capital of France?',
-    choices: {
-a: "Bordeaux",
-b: "France",
-c: "Nice"
-    },
-    answer: 'b',
+    choices: [ 
+      "Bordeaux",
+"France",
+"Nice"]
+    ,
+    answer: "France",
   },
   {
     question: 'What is the capital of Netherlands?',
-    choices: {
-a: "Amsterdam",
-b: "Breda",
-c: "Rotterdam",
-    },
-    answer: 'a',
+    choices: [
+"Amsterdam",
+ "Breda",
+"Rotterdam",
+    ],
+    answer: "Amsterdam",
   },
   {
     question: 'What is the capital of Russia?',
-    choices: {
-a: "St. Petersburg",
-b: "Omsk",
-c: "Moscow"
-    },
-    answer: 'c',
+    choices: 
+[
+  "St. Petersburg",
+"Omsk",
+"Moscow"
+],
+    answer: "Moscow",
   },
   {
     question: 'What is the capital of Switzerland?',
@@ -99,15 +100,26 @@ c: "Moscow"
     answer: 'a',
   },
 ];
-
-let wrong = []
+let currentQuestion = 0;
+let score = 0;
 
 function showQuestions(){
-
+  const data = Questions.question;
+  questions.innerText = data.question;
+  choices.innerHTML = '';
+  data.options.forEach((option)=>{
+    const button = document.querySelector("#buttons");
+    button.innerText = option;
+    button.classList.add('option-btn');
+    button.addEventListener('click', ()=> 
+    checkAnswer(option));
+    optionsElement.appendChild(button);
+  })
 };
 
-function results(){
-
+function results(answer){
+  const data = Questions.question;
+  if (answer === data.answer)
 };
 
 
