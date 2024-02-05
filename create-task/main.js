@@ -1,9 +1,10 @@
 import './style.css'
 
 const DOMSelectors = {
-  container: document.getElementById("quiz"),
-  button: document.getElementById("button"),
-  results: document.getElementById("submit"),
+  questions: document.getElementById("question"),
+  choices: document.getElementById("choices"),
+  submit: document.getElementById("submit-btn"),
+  results: document.getElementById("results")
 };
 
 const Questions = [
